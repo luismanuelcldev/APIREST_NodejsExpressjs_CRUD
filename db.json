@@ -1,0 +1,43 @@
+{
+   "vehiculos": [
+    {
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "año": 2020,
+      "color": "Rojo",
+      "tipo": "Sedan",
+      "kilometraje": 15000,
+      "combustible": "Gasolina",
+      "transmision": "Automatica",
+      "precio": 20000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 5
+    },
+    {
+      "marca": "Honda",
+      "modelo": "Civic",
+      "año": 2019,
+      "color": "Negro",
+      "tipo": "Sedan",
+      "kilometraje": 22000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 19000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 5
+    },
+    {
+        "marca": "Ford",
+        "modelo": "F-150",
+        "año": 2021,
+        "color": "Azul",
+        "tipo": "Camioneta",
+        "kilometraje": 5000,
+        "combustible": "Diésel",
+        "transmision": "Automática",
+        "precio": 35000,
+        "numero_de_puertas": 4,
+        "numero_de_asientos": 6
+      }
+   ] 
+}

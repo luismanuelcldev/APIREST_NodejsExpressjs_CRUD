@@ -1,0 +1,22 @@
+{
+  "name": "api-rest-node-js-y-express",
+  "version": "1.0.0",
+  "description": "Mi Primera Api utilizando nodejs y expressjs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "luismanuel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
