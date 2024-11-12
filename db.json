@@ -1,22 +1,10 @@
 {
-   "vehiculos": [
+  "vehiculos": [
     {
-      "marca": "Toyota",
-      "modelo": "Corolla",
-      "año": 2020,
-      "color": "Rojo",
-      "tipo": "Sedan",
-      "kilometraje": 15000,
-      "combustible": "Gasolina",
-      "transmision": "Automatica",
-      "precio": 20000,
-      "numero_de_puertas": 4,
-      "numero_de_asientos": 5
-    },
-    {
+      "id": 2,
+      "anio": 2019,
       "marca": "Honda",
       "modelo": "Civic",
-      "año": 2019,
       "color": "Negro",
       "tipo": "Sedan",
       "kilometraje": 22000,
@@ -27,17 +15,46 @@
       "numero_de_asientos": 5
     },
     {
-        "marca": "Ford",
-        "modelo": "F-150",
-        "año": 2021,
-        "color": "Azul",
-        "tipo": "Camioneta",
-        "kilometraje": 5000,
-        "combustible": "Diésel",
-        "transmision": "Automática",
-        "precio": 35000,
-        "numero_de_puertas": 4,
-        "numero_de_asientos": 6
-      }
-   ] 
+      "id": 3,
+      "anio": 2021,
+      "marca": "Ford",
+      "modelo": "F-150",
+      "color": "Azul",
+      "tipo": "Camioneta",
+      "kilometraje": 5000,
+      "combustible": "Diésel",
+      "transmision": "Automática",
+      "precio": 35000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 6
+    },
+    {
+      "id": 4,
+      "anio": 2024,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "color": "Rojo",
+      "tipo": "Coupe",
+      "kilometraje": 25000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 18000,
+      "numero_de_puertas": 2,
+      "numero_de_asientos": 2
+    },
+    {
+      "id": 6,
+      "anio": 2026,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "color": "Rojo",
+      "tipo": "Coupe",
+      "kilometraje": 25000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 18000,
+      "numero_de_puertas": 2,
+      "numero_de_asientos": 2
+    }
+  ]
 }

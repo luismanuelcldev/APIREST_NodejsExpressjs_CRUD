@@ -1,5 +1,33 @@
 GET http://localhost:3000/vehiculos HTTP/1.1
 
 ###
-GET http://localhost:3000/vehiculos/toyota HTTP/1.1
+GET http://localhost:3000/vehiculos/id/1 HTTP/1.1
 
+###
+POST http://localhost:3000/vehiculos HTTP/1.1
+Content-Type: application/json
+
+{
+      "anio": 2026,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "color": "Rojo",
+      "tipo": "Coupe",
+      "kilometraje": 25000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 18000,
+      "numero_de_puertas": 2,
+      "numero_de_asientos": 2
+}
+
+###
+PUT http://localhost:3000/vehiculos/id/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "precio": 33000
+}
+
+###
+DELETE http://localhost:3000/vehiculos/id/1 HTTP/1.1
