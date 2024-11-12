@@ -1,9 +1,10 @@
+### Solicitud con el metodo GET utilizada para recuperar todos los vehiculos almacenados en el servidor.
 GET http://localhost:3000/vehiculos HTTP/1.1
 
-###
+### Solicitud con el metodo GET utilizada para ver la informacion del vehiculo con el ID espec1fico 1.
 GET http://localhost:3000/vehiculos/id/1 HTTP/1.1
 
-###
+### Solicitud con el metodo POST utilizada para agregar un nuevo vehiculo al servidor.
 POST http://localhost:3000/vehiculos HTTP/1.1
 Content-Type: application/json
 
@@ -21,7 +22,7 @@ Content-Type: application/json
       "numero_de_asientos": 2
 }
 
-###
+### Solicitud con el metodo PUT utilizada para actualizar la informacion de un vehiculo especifico identificado por el ID 1.
 PUT http://localhost:3000/vehiculos/id/1 HTTP/1.1
 Content-Type: application/json
 
@@ -29,5 +30,5 @@ Content-Type: application/json
   "precio": 33000
 }
 
-###
+### Solicitud con el metodo PUT utilizada para eliminar un vehiculo especifico identificado por el ID 1.
 DELETE http://localhost:3000/vehiculos/id/1 HTTP/1.1
