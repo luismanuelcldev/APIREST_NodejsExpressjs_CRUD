@@ -1,7 +1,7 @@
 {
   "name": "api-rest-node-js-y-express",
   "version": "1.0.0",
-  "description": "Mi Primera Api utilizando nodejs y expressjs",
+  "description": "Mi Primera API utilizando NodeJS y ExpressJS",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -14,7 +14,9 @@
   "author": "luismanuel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "swagger-jsdoc": "6.2.8",
+    "swagger-ui-express": "5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
