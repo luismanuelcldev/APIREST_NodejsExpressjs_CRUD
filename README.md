@@ -84,7 +84,7 @@ DELETE /vehiculos/id/:id
 
 ## ⚡️ Instalación y Uso
 
-### ⚠️ Requisitos Previos
+## ⚠️ Requisitos Previos
 - Node.js (versión 14 o superior)
 - npm (gestor de paquetes de Node.js)
 
@@ -114,9 +114,11 @@ o
 npm run dev
 ```
 
-⚠️ ### El servidor se iniciará en http://localhost:3000
+El servidor se iniciará en http://localhost:3000
 
 ## 📚 Documentación
+
+![Documentacion](public/images/Captura-de-pantalla-api-docs.png)
 
 ```bash
 http://localhost:3000/api-docs
