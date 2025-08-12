@@ -55,6 +55,20 @@
       "precio": 18000,
       "numero_de_puertas": 2,
       "numero_de_asientos": 2
+    },
+    {
+      "id": 9,
+      "anio": 2025,
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "color": "Gris",
+      "tipo": "Sedan",
+      "kilometraje": 1000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 250000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 5
     }
   ]
 }

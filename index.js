@@ -143,10 +143,17 @@ app.get("/vehiculos/id/:id", (req, res) => {
 app.post("/vehiculos", (req, res) => {
   const data = readData(); // Leer los datos del archivo JSON
   const body = req.body; // Obtener el cuerpo de la solicitud
+  
+  // Validar que el cuerpo de la solicitud no esté vacío
+  if (Object.keys(body).length === 0) {
+    return res.status(400).json({ error: 'El cuerpo de la solicitud no puede estar vacío.' });
+  }
+  
   const nuevoVehiculo = {
     id: data.vehiculos.length > 0 ? data.vehiculos[data.vehiculos.length - 1].id + 1 : 1, // Generar un nuevo ID único para el vehículo
     ...body, // Incluir los demás datos del cuerpo de la solicitud
   };
+  
   data.vehiculos.push(nuevoVehiculo); // Agregar el nuevo vehículo al array de vehículos
   try {
     writeData(data); // Escribir los datos actualizados en el archivo JSON
@@ -228,7 +235,22 @@ app.delete("/vehiculos/id/:id", (req, res) => {
   }
 });
 
-// Iniciar el servidor en el puerto 3000
-app.listen(3000, () => {
-  console.log('El servidor está escuchando en el puerto 3000'); // Imprimir mensaje de inicio del servidor
+// Configuración del puerto
+const PORT = process.env.PORT || 3000;
+
+// Iniciar el servidor con manejo de errores para puerto ocupado
+const server = app.listen(PORT, () => {
+  console.log(`El servidor está escuchando en el puerto ${PORT}`); // Imprimir mensaje de inicio del servidor
+}).on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    // Si el puerto está ocupado, intentamos con otro puerto
+    const newPort = PORT + 1;
+    console.log(`El puerto ${PORT} está en uso, intentando con el puerto ${newPort}`);
+    server.close();
+    app.listen(newPort, () => {
+      console.log(`El servidor está escuchando en el puerto ${newPort}`);
+    });
+  } else {
+    console.error(`Error al iniciar el servidor: ${err.message}`);
+  }
 });
