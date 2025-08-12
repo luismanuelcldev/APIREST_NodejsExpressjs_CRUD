@@ -87,8 +87,11 @@ DELETE /vehiculos/id/:id
 ## ⚠️ Requisitos Previos
 - Node.js (versión 14 o superior)
 - npm (gestor de paquetes de Node.js)
+- Docker y Docker Compose (opcional, para despliegue containerizado)
 
 ### 🔨 Pasos de Instalación
+
+#### Método Tradicional
 
 1. **Clonar el Repositorio**
 
@@ -116,6 +119,29 @@ npm run dev
 
 El servidor se iniciará en http://localhost:3000
 
+#### Usando Docker 🐳
+
+1. **Construir y ejecutar con Docker Compose**
+
+```bash
+docker-compose up -d
+```
+
+2. **Verificar los contenedores en ejecución**
+
+```bash
+docker-compose ps
+```
+
+3. **Detener los contenedores**
+
+```bash
+docker-compose down
+```
+
+El servidor API estará disponible en http://localhost:3000
+La documentación Swagger estará disponible en http://localhost:8080
+
 ## 📚 Documentación
 
 ![Documentacion](public/images/Captura-de-pantalla-api-docs.png)
@@ -126,11 +152,14 @@ http://localhost:3000/api-docs
 
 ## 🗂️ Estructura del Proyecto
 
-├── index.js          # Punto de entrada de la aplicación
-├── db.json           # Archivo de base de datos
-├── requests.http     # Ejemplos de peticiones HTTP
-├── package.json      # Dependencias y configuración
-└── README.md         # Documentación
+├── index.js            # Punto de entrada de la aplicación
+├── db.json             # Archivo de base de datos
+├── requests.http       # Ejemplos de peticiones HTTP
+├── package.json        # Dependencias y configuración
+├── Dockerfile          # Configuración para construir la imagen Docker
+├── docker-compose.yml  # Configuración de servicios Docker
+├── .dockerignore       # Archivos ignorados en la construcción de Docker
+└── README.md           # Documentación
 
 ## 👨‍💻 Desarrollador
 

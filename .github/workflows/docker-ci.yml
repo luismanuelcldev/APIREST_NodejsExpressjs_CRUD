@@ -1,0 +1,33 @@
+name: Docker CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies
+      run: npm install
+    
+    
+    - name: Build Docker image
+      run: docker build -t api-rest-vehicles .
+      
+    - name: Verify Docker image
+      run: |
+        docker run -d --name test-api-container -p 3000:3000 api-rest-vehicles
+        sleep 5
+        curl -s http://localhost:3000/ | grep "Bienvenido"
+        docker stop test-api-container

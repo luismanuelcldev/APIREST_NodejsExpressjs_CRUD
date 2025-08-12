@@ -236,7 +236,7 @@ app.delete("/vehiculos/id/:id", (req, res) => {
 });
 
 // Configuración del puerto
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Iniciar el servidor con manejo de errores para puerto ocupado
 const server = app.listen(PORT, () => {
