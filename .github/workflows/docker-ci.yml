@@ -27,7 +27,7 @@ jobs:
       
     - name: Verify Docker image
       run: |
-        docker run -d --name test-api-container -p 3000:3000 api-rest-vehicles
+        docker run -d --name test-api-container -p 3001:3001 api-rest-vehicles
         sleep 5
-        curl -s http://localhost:3000/ | grep "Bienvenido"
+        curl -s http://localhost:3001/ | grep "Bienvenido"
         docker stop test-api-container
