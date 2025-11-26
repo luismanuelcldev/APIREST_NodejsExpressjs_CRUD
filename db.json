@@ -29,20 +29,6 @@
       "numero_de_asientos": 6
     },
     {
-      "id": 4,
-      "anio": 2024,
-      "marca": "Honda",
-      "modelo": "Civic",
-      "color": "Rojo",
-      "tipo": "Coupe",
-      "kilometraje": 31000,
-      "combustible": "Gasolina",
-      "transmision": "Manual",
-      "precio": 18000,
-      "numero_de_puertas": 2,
-      "numero_de_asientos": 2
-    },
-    {
       "id": 6,
       "anio": 2026,
       "marca": "Honda",
@@ -67,6 +53,34 @@
       "combustible": "Gasolina",
       "transmision": "Manual",
       "precio": 250000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 5
+    },
+    {
+      "id": 10,
+      "marca": "Audi",
+      "modelo": "XR",
+      "anio": 2024,
+      "color": "Azul",
+      "Tipo": "Sport",
+      "kilometraje": 22000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 19000,
+      "numero_de_puertas": 4,
+      "numero_de_asientos": 5
+    },
+    {
+      "id": 11,
+      "marca": "Audi",
+      "modelo": "XR",
+      "anio": 2024,
+      "color": "Azul",
+      "Tipo": "Sport",
+      "kilometraje": 22000,
+      "combustible": "Gasolina",
+      "transmision": "Manual",
+      "precio": 19000,
       "numero_de_puertas": 4,
       "numero_de_asientos": 5
     }
